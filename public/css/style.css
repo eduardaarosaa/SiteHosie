@@ -1,0 +1,47 @@
+.navbar-light{
+	background-color: #131F28!important;
+}
+.first-div{
+	
+	height: 1%;
+	background-color: #AB6CE6;
+}
+footer{
+
+	background-color: #131F28!important;
+	color:#fff;
+	font-size: 11pt;
+}
+
+i{
+    color: #AB6CE6;
+    font-size: 5em;
+}
+.roxo{
+    
+    background-color: #AB6CE6;
+}
+
+.btn-gray{
+
+    background-color:#131F28!important;
+    color:#fff!important;
+
+}
+
+.i-branco{
+    color:#fff;
+    font-size: 1em;
+}
+
+.i-roxo{
+    color: #fff;
+}
+.i-pequeno{
+    color: #AB6CE6;
+    font-size: 2em!important;
+    margin-top: 1cm;
+}
+body{
+overflow-x: hidden;
+}
