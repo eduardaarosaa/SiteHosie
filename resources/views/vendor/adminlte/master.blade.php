@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="{{ asset('vendor/fontawesome-free/css/all.min.css') }}">
     <link rel="stylesheet" href="{{ asset('vendor/overlayScrollbars/css/OverlayScrollbars.min.css') }}">
 
+
     @include('adminlte::plugins', ['type' => 'css'])
 
     @yield('adminlte_css_pre')
@@ -23,6 +24,8 @@
     @else
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     @endif
+    <link rel="icon" type="img/png" href="../img/logo.png" />
+    <link rel="stylesheet" type="text/css" href="../css/styleadmin.css">
 </head>
 <body class="@yield('classes_body')" @yield('body_data')>
 

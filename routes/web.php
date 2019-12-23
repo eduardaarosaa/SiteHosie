@@ -17,6 +17,8 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
-Route::post('enviado', 'BudgetsController@create')->name('enviado');
-Route::get('verContatos','BudgetsController@index')->name('verContatos');
+// Route::get('/home', 'HomeController@index')->name('home');
+Route::post('enviado', 'BudgetsController@create')->name('enviado')->middleware('auth');
+Route::get('/home','BudgetsController@index')->name('verContatos')->middleware('auth');
+Route::delete('/contato/{id}', 'BudgetsController@destroy')->middleware('auth');
+

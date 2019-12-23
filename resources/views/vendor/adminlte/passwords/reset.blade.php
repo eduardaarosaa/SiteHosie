@@ -1,5 +1,4 @@
-<link rel="icon" type="img/png" href="img/logo.png" />
-<link rel="stylesheet" type="text/css" href="css/styleadmin.css">
+
 @extends('adminlte::master')
 
 @section('adminlte_css')
@@ -20,6 +19,7 @@
 @endif
 
 @section('body')
+
     <div class="login-box">
         <div class="login-logo">
             <a href="{{ $dashboard_url }}">{!! config('adminlte.logo', '<b>Admin</b>LTE') !!}</a>

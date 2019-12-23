@@ -33,7 +33,13 @@
 				      <td>{{$row->type}}</td>
 				      <td>{{$row->meters}}</td>
 				      <td>{{$row->quant}}</td>
-				      <td><button class="btn" type="submit">Apagar</button></td>
+				      <td>
+				      	 <form action="contato/{{$row->id}}" method="post">
+                                        @csrf
+                                        <input type="hidden" name="_method" value="DELETE">
+                                        <button type="submit" class="btn">Apagar </button>
+                         </form>
+				      </td>
 				    </tr>
 				   @endforeach
 				  </tbody>
