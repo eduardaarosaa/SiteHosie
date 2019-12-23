@@ -31,9 +31,6 @@ CREATE TABLE IF NOT EXISTS `budgets` (
 -- Copiando dados para a tabela bd_hosie.budgets: ~22 rows (aproximadamente)
 /*!40000 ALTER TABLE `budgets` DISABLE KEYS */;
 INSERT INTO `budgets` (`id`, `mail`, `type`, `meters`, `quant`, `created_at`, `updated_at`) VALUES
-	(1, 'eduardacirina@gmail.com', 'Apartamento', '60', '+6', '2019-12-20 20:32:02', '2019-12-20 20:32:02'),
-	(2, 'milena03rosa@gmail.com', 'Studio', '30', '2', '2019-12-20 20:37:22', '2019-12-20 20:37:22'),
-	(3, 'milena03rosa@gmail.com', 'Studio', '30', '2', '2019-12-20 20:38:33', '2019-12-20 20:38:33'),
 	(4, 'milena03rosa@gmail.com', 'Studio', '30', '2', '2019-12-20 20:40:45', '2019-12-20 20:40:45'),
 	(5, 'milena03rosa@gmail.com', 'Studio', '30', '2', '2019-12-20 20:41:13', '2019-12-20 20:41:13'),
 	(6, 'milena03rosa@gmail.com', 'Studio', '30', '2', '2019-12-20 20:46:34', '2019-12-20 20:46:34'),
@@ -53,8 +50,7 @@ INSERT INTO `budgets` (`id`, `mail`, `type`, `meters`, `quant`, `created_at`, `u
 	(20, 'milena03rosa@gmail.com', 'Studio', '30', '2', '2019-12-20 20:48:30', '2019-12-20 20:48:30'),
 	(21, '208232017@eniac.edu.br', 'Sobrado', '80', '4', '2019-12-20 20:50:14', '2019-12-20 20:50:14'),
 	(22, '208232017@eniac.edu.br', 'Sobrado', '80', '4', '2019-12-20 20:53:25', '2019-12-20 20:53:25'),
-	(23, 'eduardarosa@gmail.com', 'Studio', '18', '2', '2019-12-20 20:54:11', '2019-12-20 20:54:11'),
-	(24, 'eduardarosa@gmail.com', 'Studio', '18', '2', '2019-12-20 20:54:11', '2019-12-20 20:54:11');
+	(23, 'eduardarosa@gmail.com', 'Studio', '18', '2', '2019-12-20 20:54:11', '2019-12-20 20:54:11');
 /*!40000 ALTER TABLE `budgets` ENABLE KEYS */;
 
 -- Copiando estrutura para tabela bd_hosie.failed_jobs
@@ -97,8 +93,10 @@ CREATE TABLE IF NOT EXISTS `password_resets` (
   KEY `password_resets_email_index` (`email`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- Copiando dados para a tabela bd_hosie.password_resets: ~0 rows (aproximadamente)
+-- Copiando dados para a tabela bd_hosie.password_resets: ~1 rows (aproximadamente)
 /*!40000 ALTER TABLE `password_resets` DISABLE KEYS */;
+INSERT INTO `password_resets` (`email`, `token`, `created_at`) VALUES
+	('eduardarosa@bloco1.com.br', '$2y$10$hO3F/67w0FtKujM38TfsaeOYce9yT/oE7obD1xJyHDzWdpnZ2bXRO', '2019-12-23 18:26:17');
 /*!40000 ALTER TABLE `password_resets` ENABLE KEYS */;
 
 -- Copiando estrutura para tabela bd_hosie.users
