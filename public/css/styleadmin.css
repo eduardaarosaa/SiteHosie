@@ -17,6 +17,16 @@ aside{
 	background-color: #C455A8!important;
 }
 
-a.nav-link{
-	
+span.page-link{
+	border: 1px solid #C455A8!important;
+	background-color: #C455A8!important;
+	color:#000!important;
+}
+
+a.page-link{
+	color:#000!important;
+}
+
+.sidebar-dark-primary .nav-sidebar>.nav-item>.nav-link.active, .sidebar-light-primary .nav-sidebar>.nav-item>.nav-link.active{
+	background-color:#E5CDC8!important;
 }
