@@ -19,3 +19,4 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::post('enviado', 'BudgetsController@create')->name('enviado');
+Route::get('verContatos','BudgetsController@index')->name('verContatos');

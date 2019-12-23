@@ -8,6 +8,7 @@ use Illuminate\Http\Request;
 class BudgetsController extends Controller
 {
     private $budget;
+    private $totalPage = 5;
 
     public function __construct(Budgets $budget){
 
@@ -20,7 +21,8 @@ class BudgetsController extends Controller
      */
     public function index()
     {
-        //
+        $consulta = Budgets::paginate($this->totalPage);
+        return view('painel/contact')->with('consulta',$consulta);
     }
 
     /**

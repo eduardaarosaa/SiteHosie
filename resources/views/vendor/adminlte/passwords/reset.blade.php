@@ -1,3 +1,5 @@
+<link rel="icon" type="img/png" href="img/logo.png" />
+<link rel="stylesheet" type="text/css" href="css/styleadmin.css">
 @extends('adminlte::master')
 
 @section('adminlte_css')

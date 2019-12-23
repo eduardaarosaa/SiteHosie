@@ -1,3 +1,22 @@
 body{
-	background-color: #000!important;
+	/*background-color: #AB6CE6!important;*/
+	background:url('../img/sala.jpg') no-repeat!important;
+    background-size:100%;
+}
+.btn{
+	border:1px solid #C455A8!important;
+	background-color: #C455A8!important	
+}
+
+.link{
+	color:#C455A8!important;
+}
+
+aside{
+	color:#fff!important;
+	background-color: #C455A8!important;
+}
+
+a.nav-link{
+	
 }

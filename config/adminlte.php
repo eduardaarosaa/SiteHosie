@@ -31,7 +31,7 @@ return [
     */
 
     'logo' => 'Hosie',
-    // 'logo_img' => '',
+    'logo_img' => null,
     'logo_img_class' => 'brand-image-xl',
     'logo_img_xl' => null,
     'logo_img_xl_class' => 'brand-image-xs',
@@ -202,19 +202,13 @@ return [
             'icon' => 'fas fa-fw fa-lock',
         ],
        
-        ['header' => 'Etiquetas'],
+        ['header' => 'Contatos'],
         [
-            'text'       => 'Importantes',
-            'icon_color' => 'red',
+            'text'       => 'Ver contatos',
+            'url' => 'verContatos',
+            'icon_color' => 'write',
         ],
-        [
-            'text'       => 'Intermediárias',
-            'icon_color' => 'yellow',
-        ],
-        [
-            'text'       => 'information',
-            'icon_color' => 'aqua',
-        ],
+      
     ],
 
     /*

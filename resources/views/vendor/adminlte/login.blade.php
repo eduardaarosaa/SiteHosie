@@ -1,3 +1,6 @@
+<link rel="stylesheet" type="text/css" href="css/styleadmin.css">
+<link rel="icon" type="img/png" href="img/logo.png" />
+
 @extends('adminlte::master')
 
 @section('adminlte_css_pre')
@@ -80,13 +83,13 @@
                     </div>
                 </form>
                 <p class="mt-2 mb-1">
-                    <a href="{{ $password_reset_url }}">
+                    <a class="link" href="{{ $password_reset_url }}">
                         {{ __('adminlte::adminlte.i_forgot_my_password') }}
                     </a>
                 </p>
                 @if ($register_url)
                     <p class="mb-0">
-                        <a href="{{ $register_url }}">
+                        <a class="link" href="{{ $register_url }}">
                             {{ __('adminlte::adminlte.register_a_new_membership') }}
                         </a>
                     </p>
